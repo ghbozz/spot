@@ -10,18 +10,33 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 ```ruby
 my_hash = {"key1" => "value1", "key2" => "value2"}
 
-# Create: Ajouter des éléments à un hash
-my_hash = {}
-my_hash[:create] = "Create example"
+# Create: Créer un hash pour un nouvel utilisateur avec des clés en chaînes
+user_data_string = {}
+user_data_string["name"] = "Alice"
+user_data_string["age"] = 30
 
-# Read: Lire un élément d'un hash
-read_example = my_hash[:create]
+# Create: Avec des clés en symboles
+user_data_symbol = {}
+user_data_symbol[:name] = "Alice"
+user_data_symbol[:age] = 30
 
-# Update: Modifier un élément d'un hash
-my_hash[:create] = "Updated create example"
+# Read: Lire des données à partir du hash (version chaîne)
+name_string = user_data_string["name"]
 
-# Delete: Supprimer un élément d'un hash
-my_hash.delete(:create)
+# Read: (version symbole)
+name_symbol = user_data_symbol[:name]
+
+# Update: Mettre à jour l'âge de l'utilisateur (version chaîne)
+user_data_string["age"] = 31
+
+# Update: (version symbole)
+user_data_symbol[:age] = 31
+
+# Delete: Supprimer l'âge de l'utilisateur (version chaîne)
+user_data_string.delete("age")
+
+# Delete: (version symbole)
+user_data_symbol.delete(:age)
 ```
 
 ### 2. Méthodes de base
