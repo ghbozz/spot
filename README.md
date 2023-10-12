@@ -10,6 +10,10 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 ### 2. Méthodes de base
 - `keys`, `values`, `merge`, `delete`
 
+my_hash.keys
+my_hash.merge({"key3" => "value3"})
+my_hash.delete("key1")
+
 ### 3. Méthodes pour Itération
 - Utilisation de `each` pour parcourir un hash
 
