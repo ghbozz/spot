@@ -9,6 +9,19 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 ```ruby
 my_hash = {"key1" => "value1", "key2" => "value2"}
+
+# Create: Ajouter des éléments à un hash
+my_hash = {}
+my_hash[:create] = "Create example"
+
+# Read: Lire un élément d'un hash
+read_example = my_hash[:create]
+
+# Update: Modifier un élément d'un hash
+my_hash[:create] = "Updated create example"
+
+# Delete: Supprimer un élément d'un hash
+my_hash.delete(:create)
 ```
 
 ### 2. Méthodes de base
