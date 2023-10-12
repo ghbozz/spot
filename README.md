@@ -8,7 +8,7 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 - Définition et utilisation basique
 
 ```ruby
-my_hash = {"key1" => "value1", "key2" => "value2"}
+user_data = {"key1" => "value1", "key2" => "value2"}
 
 # Create: Créer un hash pour un nouvel utilisateur avec des clés en chaînes
 user_data_string = {}
